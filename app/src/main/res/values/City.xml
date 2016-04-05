@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="City">
+        <item>All Cities</item>
+        <item>Jeddah</item>
+        <item>Riyadh</item>
+        <item>Mecca</item>
+        <item>Medina</item>
+        <item>Al-Qassim</item>
+        <item>Yanbu</item>
+        <item>Dammam</item>
+        <item>Najran</item>
+        <item>Abha</item>
+        <item>Asir</item>
+    </string-array>
+
+</resources>

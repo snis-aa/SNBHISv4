@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hospital.snbhis.SeachHospital"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Hospital"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#000106" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@+array/City"
+            android:id="@+id/spinner"
+          />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:textSize="18dp"
+            android:id="@+id/hospitalname"
+            android:hint="Name Hospital" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button"
+            android:text="Search"
+            android:id="@+id/btnsearch1"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Display Search Rating"
+            android:id="@+id/textView3"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#050000" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Location"
+            android:id="@+id/chLocation"
+            android:layout_marginTop="15dp"
+            android:textColor="#040000"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Price"
+            android:id="@+id/chPrice"
+            android:layout_marginTop="15dp"
+            android:textColor="#040000"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Better Treatment"
+            android:id="@+id/chTreatment"
+            android:layout_marginTop="15dp"
+            android:textColor="#040000"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleaness"
+            android:id="@+id/chCleaness"
+            android:layout_marginTop="15dp"
+            android:textColor="#040000"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button"
+            android:text="Search By Rate"
+            android:id="@+id/btnsearch2"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</RelativeLayout>
