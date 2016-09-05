@@ -33,16 +33,7 @@ public class MainActivity extends Activity {
 
             }
         });
-        // Search Doctor Activity
-        Button Button3 = (Button) findViewById(R.id.btnChat);
-        Button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),Chat.class);
-                startActivity(i);
-
-            }
-        });
+        
         // Search Doctor Activity
         Button Button4 = (Button) findViewById(R.id.btnExit);
         Button4.setOnClickListener(new View.OnClickListener() {
