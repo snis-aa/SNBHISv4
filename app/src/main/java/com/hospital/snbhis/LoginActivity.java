@@ -30,38 +30,6 @@ public class LoginActivity extends Activity {
     JSONParser jsonParser = new JSONParser();
     private static String url = Data.server+"/snbhis/login.php";
 
-
-
-
-
-    public void openMainActivity(View view){
-        // Checks whether Device is already registered on GCM
-        if (GCMRegistrar.isRegisteredOnServer(this)) {
-
-            SharedPreferences prefs = getPreferences(MODE_PRIVATE);
-            String name = prefs.getString("namePGCM", "");
-
-            Intent i = new Intent(this, Chat.class);
-            Data.fullname=name;
-            startActivity(i);
-        }
-        else{
-            Toast.makeText(getApplicationContext(), "The device is not registered yet", Toast.LENGTH_LONG).show();
-        }
-    }
-
-    public void abrirActivityAddContact(View view){
-        // Checks whether Device is already registered on GCM
-        if (GCMRegistrar.isRegisteredOnServer(this)) {
-            Intent i = new Intent(this, AddContactActivity.class);
-            startActivity(i);
-        }
-        else{
-            Toast.makeText(getApplicationContext(), "The device is not registered yet", Toast.LENGTH_LONG).show();
-        }
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
